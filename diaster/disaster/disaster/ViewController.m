@@ -63,12 +63,19 @@
     
     //  Setup Advertiser
     self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:@"chat" discoveryInfo:nil session:self.mySession];
-    
+    [self.advertiser start];
+    self.browserVC.delegate = self;
 }
 // Action setting BrowserVC
 - (void) showBrowserVC{
     [self presentViewController:self.browserVC animated:YES completion:nil];
 }
+
+- (void) sendText{
+    
+}
+
+
 // Consistency
 - (void)viewDidLoad
 {
@@ -83,6 +90,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void) dismissBrowserVC{
+    [self.browserVC dismissViewControllerAnimated:YES completion:nil];
+}
 
+#pragma marks MCBrowserViewControllerDelegate
+
+// Notifies the delegate, when the user taps the done button
+- (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController{
+    [self dismissBrowserVC];
+}
+
+// Notifies delegate that the user taps the cancel button.
+- (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController{
+    [self dismissBrowserVC];
+}
 
 @end
