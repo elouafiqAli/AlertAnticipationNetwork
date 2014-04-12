@@ -48,8 +48,10 @@
     [self.view addSubview:self.chatBox];
     
     [self.browserButton addTarget:self action:@selector(showBrowserVC) forControlEvents:UIControlEventTouchUpInside];
+    self.chatBox.delegate = self;
 
 }
+
 //Setting up multiple IDs
 - (void) setUpMultipeer{
     //  Setup peer ID
@@ -65,16 +67,80 @@
     self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:@"chat" discoveryInfo:nil session:self.mySession];
     [self.advertiser start];
     self.browserVC.delegate = self;
+    self.mySession.delegate = self;
+    
 }
 // Action setting BrowserVC
 - (void) showBrowserVC{
     [self presentViewController:self.browserVC animated:YES completion:nil];
 }
-
+//************* COMMUNICATION MANAGEMENT **********
 - (void) sendText{
+    //  Retrieve text from chat box and clear chat box
+    NSString *message = self.chatBox.text;
+    self.chatBox.text = @"";
+    
+    //  Convert text to NSData
+    NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //  Send data to connected peers
+    NSError *error;
+    [self.mySession sendData:data toPeers:[self.mySession connectedPeers] withMode:MCSessionSendDataUnreliable error:&error];
+    
+    //  Append your own text to text box
+    [self receiveMessage: message fromPeer: self.myPeerID];
+}
+
+- (void) receiveMessage: (NSString *) message fromPeer: (MCPeerID *) peer{
+    //  Create the final text to append
+    NSString *finalText;
+    if (peer == self.myPeerID) {
+        finalText = [NSString stringWithFormat:@"\nme: %@\n", message];
+    }
+    else{
+        finalText = [NSString stringWithFormat:@"\n%@: %@\n", peer.displayName, message];
+    }
+    
+    //  Append text to text box
+    self.textBox.text = [self.textBox.text stringByAppendingString:finalText];
+}
+//*************************************************
+
+//############# PROTOCOL IMPLEMENTATION #######
+
+#pragma marks MCSessionDelegate
+// Remote peer changed state
+- (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state{
     
 }
 
+// Received data from remote peer
+- (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID{
+    //  Decode data back to NSString
+    NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    //  append message to text box on main thread
+    dispatch_async(dispatch_get_main_queue(),^{
+        [self receiveMessage: message fromPeer: peerID];
+    });
+}
+
+// Received a byte stream from remote peer
+- (void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID{
+    
+}
+
+// Start receiving a resource from remote peer
+- (void)session:(MCSession *)session didStartReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID withProgress:(NSProgress *)progress{
+    
+}
+
+// Finished receiving a resource from remote peer and saved the content in a temporary location - the app is responsible for moving the file to a permanent location within its sandbox
+- (void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error{
+    
+}
+
+//#############################################
 
 // Consistency
 - (void)viewDidLoad
@@ -95,12 +161,17 @@
 }
 
 #pragma marks MCBrowserViewControllerDelegate
-
 // Notifies the delegate, when the user taps the done button
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController{
     [self dismissBrowserVC];
 }
+#pragma marks UITextFieldDelegate
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    [self sendText];
+    return YES;
+}
 // Notifies delegate that the user taps the cancel button.
 - (void)browserViewControllerWasCancelled:(MCBrowserViewController *)browserViewController{
     [self dismissBrowserVC];
