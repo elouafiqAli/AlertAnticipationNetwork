@@ -26,6 +26,8 @@
 
 
 @implementation ViewController
+
+// Main Frame Window to Chat
 - (void) setUpUI{
     //  Setup the browse button
     self.browserButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -44,12 +46,36 @@
     self.chatBox.backgroundColor = [UIColor lightGrayColor];
     self.chatBox.returnKeyType = UIReturnKeySend;
     [self.view addSubview:self.chatBox];
+    
+    [self.browserButton addTarget:self action:@selector(showBrowserVC) forControlEvents:UIControlEventTouchUpInside];
+
 }
+//Setting up multiple IDs
+- (void) setUpMultipeer{
+    //  Setup peer ID
+    self.myPeerID = [[MCPeerID alloc] initWithDisplayName:@"samaka"];
+    
+    //  Setup session
+    self.mySession = [[MCSession alloc] initWithPeer:self.myPeerID];
+    
+    //  Setup BrowserViewController
+    self.browserVC = [[MCBrowserViewController alloc] initWithServiceType:@"chat" session:self.mySession];
+    
+    //  Setup Advertiser
+    self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:@"chat" discoveryInfo:nil session:self.mySession];
+    
+}
+// Action setting BrowserVC
+- (void) showBrowserVC{
+    [self presentViewController:self.browserVC animated:YES completion:nil];
+}
+// Consistency
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self setUpUI];
+    [self setUpMultipeer];
 }
 
 - (void)didReceiveMemoryWarning
