@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2D963464-073D-4E10-8914-B00DFE9A7E32</string>
+	<key>IDESourceControlProjectName</key>
+	<string>disaster</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF2D150C-4440-49F5-89FB-94582D1ABFC6</key>
+		<string>ssh://bitbucket.org/keelhaule/prodomo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>diaster/disaster/disaster.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF2D150C-4440-49F5-89FB-94582D1ABFC6</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/keelhaule/prodomo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF2D150C-4440-49F5-89FB-94582D1ABFC6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF2D150C-4440-49F5-89FB-94582D1ABFC6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Multi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
