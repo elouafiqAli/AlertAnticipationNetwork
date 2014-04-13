@@ -16,7 +16,11 @@
 @property (nonatomic, strong) MCAdvertiserAssistant *advertiser;
 @property (nonatomic, strong) MCSession *mySession;
 @property (nonatomic, strong) MCPeerID *myPeerID;
-
+//Subscribe
+@property (nonatomic, strong) NSString *message;
+@property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) UIButton *subscribeButton;
+//
 @property (nonatomic, strong) UIButton *browserButton;
 @property (nonatomic, strong) UITextView *textBox;
 @property (nonatomic, strong) UITextField *chatBox;
@@ -29,12 +33,18 @@
 
 // Main Frame Window to Chat
 - (void) setUpUI{
+    //Subscribe
+    self.subscribeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.subscribeButton setTitle:@"Subscribe" forState:UIControlStateNormal];
+    self.subscribeButton.frame = CGRectMake(130, 20, 60, 40);
+    [self.view addSubview:self.subscribeButton];
+    
     //  Setup the browse button
     self.browserButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.browserButton setTitle:@"Browse" forState:UIControlStateNormal];
-    self.browserButton.frame = CGRectMake(130, 20, 60, 30);
+    self.browserButton.frame = CGRectMake(40, 20, 60, 30);
     [self.view addSubview:self.browserButton];
-    
+
     //  Setup TextBox
     self.textBox = [[UITextView alloc] initWithFrame: CGRectMake(40, 150, 240, 270)];
     self.textBox.editable = NO;
@@ -48,8 +58,10 @@
     [self.view addSubview:self.chatBox];
     
     [self.browserButton addTarget:self action:@selector(showBrowserVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.subscribeButton addTarget:self action:@selector(showAlert) forControlEvents:UIControlEventTouchUpInside];
+    
     self.chatBox.delegate = self;
-
+    
 }
 
 //Setting up multiple IDs
@@ -69,6 +81,39 @@
     self.browserVC.delegate = self;
     self.mySession.delegate = self;
     
+}
+- (void) getNotification{
+    // URL String
+    //
+    //NSURLRequest  *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://labs.bobox.ma/notif"]];
+    //NSURLResponse * response = nil;
+    //NSError * error = nil;
+    
+    // NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
+    //                                       returningResponse:&response
+    //                                                   error:&error];
+    
+    //NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+    //if (error)
+    //NSLog(@"JSONObjectWithData error: %@", error);
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"sunnh",@"type",@"atay",@"an earth Quack zilzaal", nil];
+    //for (NSMutableDictionary *dictionary in array)
+    //{
+    self.type = dictionary[@"type"];
+    self.message= dictionary[@"message"];
+    
+    //}
+}
+- (void)showAlert{
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"sunnh",@"type",@"n earth Quack zilzaal",@"message", nil];
+    self.type = dictionary[@"type"];
+    self.message= dictionary[@"message"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.type
+                                                    message:self.message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"GOOD LUCK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 // Action setting BrowserVC
 - (void) showBrowserVC{
