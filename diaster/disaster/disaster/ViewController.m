@@ -36,13 +36,13 @@
     //Subscribe
     self.subscribeButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.subscribeButton setTitle:@"Subscribe" forState:UIControlStateNormal];
-    self.subscribeButton.frame = CGRectMake(130, 20, 60, 40);
+    self.subscribeButton.frame = CGRectMake(130, 20, 80, 40);
     [self.view addSubview:self.subscribeButton];
     
     //  Setup the browse button
     self.browserButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.browserButton setTitle:@"Browse" forState:UIControlStateNormal];
-    self.browserButton.frame = CGRectMake(40, 20, 60, 30);
+    self.browserButton.frame = CGRectMake(40, 20,60, 30);
     [self.view addSubview:self.browserButton];
 
     //  Setup TextBox
@@ -85,7 +85,7 @@
 - (void) getNotification{
     // URL String
     //
-    //NSURLRequest  *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://labs.bobox.ma/notif"]];
+    //NSURLRequest  *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://bit.ly/data_JSON"]];
     //NSURLResponse * response = nil;
     //NSError * error = nil;
     
@@ -105,7 +105,19 @@
     //}
 }
 - (void)showAlert{
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"sunnh",@"type",@"n earth Quack zilzaal",@"message", nil];
+    //NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"sunnh",@"type",@"n earth Quack zilzaal",@"message", nil];
+    //self.type = dictionary[@"type"];
+    //self.message= dictionary[@"message"];
+    
+    NSURLRequest  *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://pastebin.com/raw.php?i=6J7SPVcM"]];
+    NSURLResponse * response;
+    NSError * error = nil;
+    
+    NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
+                                           returningResponse:&response
+                                                       error:nil];
+    
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     self.type = dictionary[@"type"];
     self.message= dictionary[@"message"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.type
@@ -113,7 +125,8 @@
                                                    delegate:nil
                                           cancelButtonTitle:@"GOOD LUCK"
                                           otherButtonTitles:nil];
-    [alert show];
+        [alert show];
+        return;
 }
 // Action setting BrowserVC
 - (void) showBrowserVC{

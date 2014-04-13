@@ -19,8 +19,6 @@
 		36D4087118F9B1D600DD05C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4087018F9B1D600DD05C2 /* XCTest.framework */; };
 		36D4087218F9B1D600DD05C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4085118F9B1D600DD05C2 /* Foundation.framework */; };
 		36D4087318F9B1D600DD05C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4085518F9B1D600DD05C2 /* UIKit.framework */; };
-		36D4087B18F9B1D600DD05C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36D4087918F9B1D600DD05C2 /* InfoPlist.strings */; };
-		36D4087D18F9B1D600DD05C2 /* disasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D4087C18F9B1D600DD05C2 /* disasterTests.m */; };
 		36D4088718F9B26000DD05C2 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4088618F9B26000DD05C2 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +49,6 @@
 		36D4086918F9B1D600DD05C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36D4086F18F9B1D600DD05C2 /* disasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = disasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D4087018F9B1D600DD05C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		36D4087818F9B1D600DD05C2 /* disasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "disasterTests-Info.plist"; sourceTree = "<group>"; };
-		36D4087A18F9B1D600DD05C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		36D4087C18F9B1D600DD05C2 /* disasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = disasterTests.m; sourceTree = "<group>"; };
 		36D4088618F9B26000DD05C2 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				36D4085718F9B1D600DD05C2 /* disaster */,
-				36D4087618F9B1D600DD05C2 /* disasterTests */,
 				36D4085018F9B1D600DD05C2 /* Frameworks */,
 				36D4084F18F9B1D600DD05C2 /* Products */,
 			);
@@ -134,24 +128,6 @@
 				36D4085A18F9B1D600DD05C2 /* InfoPlist.strings */,
 				36D4085D18F9B1D600DD05C2 /* main.m */,
 				36D4085F18F9B1D600DD05C2 /* disaster-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		36D4087618F9B1D600DD05C2 /* disasterTests */ = {
-			isa = PBXGroup;
-			children = (
-				36D4087C18F9B1D600DD05C2 /* disasterTests.m */,
-				36D4087718F9B1D600DD05C2 /* Supporting Files */,
-			);
-			path = disasterTests;
-			sourceTree = "<group>";
-		};
-		36D4087718F9B1D600DD05C2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36D4087818F9B1D600DD05C2 /* disasterTests-Info.plist */,
-				36D4087918F9B1D600DD05C2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D4087B18F9B1D600DD05C2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36D4087D18F9B1D600DD05C2 /* disasterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +266,6 @@
 				36D4086418F9B1D600DD05C2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		36D4087918F9B1D600DD05C2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36D4087A18F9B1D600DD05C2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -460,6 +426,7 @@
 				36D4088218F9B1D600DD05C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36D4088318F9B1D600DD05C2 /* Build configuration list for PBXNativeTarget "disasterTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +435,7 @@
 				36D4088518F9B1D600DD05C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
