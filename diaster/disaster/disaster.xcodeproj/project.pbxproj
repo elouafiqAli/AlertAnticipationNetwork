@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36AC366D18FA91790038337C /* FFCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC366318FA91790038337C /* FFCircularProgressView.m */; };
+		36AC366E18FA91790038337C /* UIColor+iOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC366518FA91790038337C /* UIColor+iOS7.m */; };
+		36AC366F18FA91790038337C /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC366818FA91790038337C /* IISideController.m */; };
+		36AC367018FA91790038337C /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC366A18FA91790038337C /* IIViewDeckController.m */; };
+		36AC367118FA91790038337C /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC366C18FA91790038337C /* IIWrapController.m */; };
+		36AC368E18FA918E0038337C /* chanceflurries.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367318FA918E0038337C /* chanceflurries.png */; };
+		36AC368F18FA918E0038337C /* chancerain.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367418FA918E0038337C /* chancerain.png */; };
+		36AC369018FA918E0038337C /* chancesleet.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367518FA918E0038337C /* chancesleet.png */; };
+		36AC369118FA918E0038337C /* chancesnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367618FA918E0038337C /* chancesnow.png */; };
+		36AC369218FA918E0038337C /* chancetstorms.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367718FA918E0038337C /* chancetstorms.png */; };
+		36AC369318FA918E0038337C /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367818FA918E0038337C /* clear.png */; };
+		36AC369418FA918E0038337C /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367918FA918E0038337C /* cloudy.png */; };
+		36AC369518FA918E0038337C /* degre-c.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367A18FA918E0038337C /* degre-c.png */; };
+		36AC369618FA918E0038337C /* degre-f.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367B18FA918E0038337C /* degre-f.png */; };
+		36AC369718FA918E0038337C /* flurries.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367C18FA918E0038337C /* flurries.png */; };
+		36AC369818FA918E0038337C /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367D18FA918E0038337C /* fog.png */; };
+		36AC369918FA918E0038337C /* fond-today-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367E18FA918E0038337C /* fond-today-1.jpg */; };
+		36AC369A18FA918E0038337C /* fond-today-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36AC367F18FA918E0038337C /* fond-today-2.jpg */; };
+		36AC369B18FA918E0038337C /* fond-today-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368018FA918E0038337C /* fond-today-3.jpg */; };
+		36AC369C18FA918E0038337C /* fond-today.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368118FA918E0038337C /* fond-today.jpg */; };
+		36AC369D18FA918E0038337C /* hazy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368218FA918E0038337C /* hazy.png */; };
+		36AC369E18FA918E0038337C /* mostlycloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368318FA918E0038337C /* mostlycloudy.png */; };
+		36AC369F18FA918E0038337C /* mostlysunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368418FA918E0038337C /* mostlysunny.png */; };
+		36AC36A018FA918E0038337C /* partlycloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368518FA918E0038337C /* partlycloudy.png */; };
+		36AC36A118FA918E0038337C /* partlysunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368618FA918E0038337C /* partlysunny.png */; };
+		36AC36A218FA918E0038337C /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368718FA918E0038337C /* rain.png */; };
+		36AC36A318FA918E0038337C /* sleet.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368818FA918E0038337C /* sleet.png */; };
+		36AC36A418FA918E0038337C /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368918FA918E0038337C /* snow.png */; };
+		36AC36A518FA918E0038337C /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368A18FA918E0038337C /* sunny.png */; };
+		36AC36A618FA918E0038337C /* sync-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368B18FA918E0038337C /* sync-128.png */; };
+		36AC36A718FA918E0038337C /* tstorms.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368C18FA918E0038337C /* tstorms.png */; };
+		36AC36A818FA918E0038337C /* unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AC368D18FA918E0038337C /* unknown.png */; };
+		36AC36AC18FA923E0038337C /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC36AA18FA923E0038337C /* AlertViewController.m */; };
+		36AC36AD18FA923E0038337C /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AC36AB18FA923E0038337C /* AlertViewController.xib */; };
+		36AC36B118FA931A0038337C /* MenuLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC36AF18FA931A0038337C /* MenuLeftViewController.m */; };
+		36AC36B218FA931A0038337C /* MenuLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AC36B018FA931A0038337C /* MenuLeftViewController.xib */; };
 		36D4085218F9B1D600DD05C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4085118F9B1D600DD05C2 /* Foundation.framework */; };
 		36D4085418F9B1D600DD05C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4085318F9B1D600DD05C2 /* CoreGraphics.framework */; };
 		36D4085618F9B1D600DD05C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4085518F9B1D600DD05C2 /* UIKit.framework */; };
@@ -33,6 +69,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36AC366218FA91790038337C /* FFCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCircularProgressView.h; sourceTree = "<group>"; };
+		36AC366318FA91790038337C /* FFCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCircularProgressView.m; sourceTree = "<group>"; };
+		36AC366418FA91790038337C /* UIColor+iOS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS7.h"; sourceTree = "<group>"; };
+		36AC366518FA91790038337C /* UIColor+iOS7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7.m"; sourceTree = "<group>"; };
+		36AC366718FA91790038337C /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		36AC366818FA91790038337C /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		36AC366918FA91790038337C /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		36AC366A18FA91790038337C /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		36AC366B18FA91790038337C /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		36AC366C18FA91790038337C /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		36AC367318FA918E0038337C /* chanceflurries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chanceflurries.png; sourceTree = "<group>"; };
+		36AC367418FA918E0038337C /* chancerain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chancerain.png; sourceTree = "<group>"; };
+		36AC367518FA918E0038337C /* chancesleet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chancesleet.png; sourceTree = "<group>"; };
+		36AC367618FA918E0038337C /* chancesnow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chancesnow.png; sourceTree = "<group>"; };
+		36AC367718FA918E0038337C /* chancetstorms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chancetstorms.png; sourceTree = "<group>"; };
+		36AC367818FA918E0038337C /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		36AC367918FA918E0038337C /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
+		36AC367A18FA918E0038337C /* degre-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "degre-c.png"; sourceTree = "<group>"; };
+		36AC367B18FA918E0038337C /* degre-f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "degre-f.png"; sourceTree = "<group>"; };
+		36AC367C18FA918E0038337C /* flurries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flurries.png; sourceTree = "<group>"; };
+		36AC367D18FA918E0038337C /* fog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fog.png; sourceTree = "<group>"; };
+		36AC367E18FA918E0038337C /* fond-today-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fond-today-1.jpg"; sourceTree = "<group>"; };
+		36AC367F18FA918E0038337C /* fond-today-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fond-today-2.jpg"; sourceTree = "<group>"; };
+		36AC368018FA918E0038337C /* fond-today-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fond-today-3.jpg"; sourceTree = "<group>"; };
+		36AC368118FA918E0038337C /* fond-today.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fond-today.jpg"; sourceTree = "<group>"; };
+		36AC368218FA918E0038337C /* hazy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hazy.png; sourceTree = "<group>"; };
+		36AC368318FA918E0038337C /* mostlycloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mostlycloudy.png; sourceTree = "<group>"; };
+		36AC368418FA918E0038337C /* mostlysunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mostlysunny.png; sourceTree = "<group>"; };
+		36AC368518FA918E0038337C /* partlycloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = partlycloudy.png; sourceTree = "<group>"; };
+		36AC368618FA918E0038337C /* partlysunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = partlysunny.png; sourceTree = "<group>"; };
+		36AC368718FA918E0038337C /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		36AC368818FA918E0038337C /* sleet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleet.png; sourceTree = "<group>"; };
+		36AC368918FA918E0038337C /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		36AC368A18FA918E0038337C /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
+		36AC368B18FA918E0038337C /* sync-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sync-128.png"; sourceTree = "<group>"; };
+		36AC368C18FA918E0038337C /* tstorms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tstorms.png; sourceTree = "<group>"; };
+		36AC368D18FA918E0038337C /* unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unknown.png; sourceTree = "<group>"; };
+		36AC36A918FA923E0038337C /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		36AC36AA18FA923E0038337C /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		36AC36AB18FA923E0038337C /* AlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		36AC36AE18FA931A0038337C /* MenuLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLeftViewController.h; sourceTree = "<group>"; };
+		36AC36AF18FA931A0038337C /* MenuLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuLeftViewController.m; sourceTree = "<group>"; };
+		36AC36B018FA931A0038337C /* MenuLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuLeftViewController.xib; sourceTree = "<group>"; };
 		36D4084E18F9B1D600DD05C2 /* disaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = disaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D4085118F9B1D600DD05C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		36D4085318F9B1D600DD05C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +156,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36AC366118FA91790038337C /* FFCircular */ = {
+			isa = PBXGroup;
+			children = (
+				36AC366218FA91790038337C /* FFCircularProgressView.h */,
+				36AC366318FA91790038337C /* FFCircularProgressView.m */,
+				36AC366418FA91790038337C /* UIColor+iOS7.h */,
+				36AC366518FA91790038337C /* UIColor+iOS7.m */,
+			);
+			path = FFCircular;
+			sourceTree = "<group>";
+		};
+		36AC366618FA91790038337C /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				36AC366718FA91790038337C /* IISideController.h */,
+				36AC366818FA91790038337C /* IISideController.m */,
+				36AC366918FA91790038337C /* IIViewDeckController.h */,
+				36AC366A18FA91790038337C /* IIViewDeckController.m */,
+				36AC366B18FA91790038337C /* IIWrapController.h */,
+				36AC366C18FA91790038337C /* IIWrapController.m */,
+			);
+			path = ViewDeck;
+			sourceTree = "<group>";
+		};
+		36AC367218FA918E0038337C /* MonCocoImages */ = {
+			isa = PBXGroup;
+			children = (
+				36AC367318FA918E0038337C /* chanceflurries.png */,
+				36AC367418FA918E0038337C /* chancerain.png */,
+				36AC367518FA918E0038337C /* chancesleet.png */,
+				36AC367618FA918E0038337C /* chancesnow.png */,
+				36AC367718FA918E0038337C /* chancetstorms.png */,
+				36AC367818FA918E0038337C /* clear.png */,
+				36AC367918FA918E0038337C /* cloudy.png */,
+				36AC367A18FA918E0038337C /* degre-c.png */,
+				36AC367B18FA918E0038337C /* degre-f.png */,
+				36AC367C18FA918E0038337C /* flurries.png */,
+				36AC367D18FA918E0038337C /* fog.png */,
+				36AC367E18FA918E0038337C /* fond-today-1.jpg */,
+				36AC367F18FA918E0038337C /* fond-today-2.jpg */,
+				36AC368018FA918E0038337C /* fond-today-3.jpg */,
+				36AC368118FA918E0038337C /* fond-today.jpg */,
+				36AC368218FA918E0038337C /* hazy.png */,
+				36AC368318FA918E0038337C /* mostlycloudy.png */,
+				36AC368418FA918E0038337C /* mostlysunny.png */,
+				36AC368518FA918E0038337C /* partlycloudy.png */,
+				36AC368618FA918E0038337C /* partlysunny.png */,
+				36AC368718FA918E0038337C /* rain.png */,
+				36AC368818FA918E0038337C /* sleet.png */,
+				36AC368918FA918E0038337C /* snow.png */,
+				36AC368A18FA918E0038337C /* sunny.png */,
+				36AC368B18FA918E0038337C /* sync-128.png */,
+				36AC368C18FA918E0038337C /* tstorms.png */,
+				36AC368D18FA918E0038337C /* unknown.png */,
+			);
+			path = MonCocoImages;
+			sourceTree = "<group>";
+		};
 		36D4084518F9B1D600DD05C2 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +247,9 @@
 		36D4085718F9B1D600DD05C2 /* disaster */ = {
 			isa = PBXGroup;
 			children = (
+				36AC367218FA918E0038337C /* MonCocoImages */,
+				36AC366118FA91790038337C /* FFCircular */,
+				36AC366618FA91790038337C /* ViewDeck */,
 				36D4086018F9B1D600DD05C2 /* AppDelegate.h */,
 				36D4086118F9B1D600DD05C2 /* AppDelegate.m */,
 				36D4086318F9B1D600DD05C2 /* Main.storyboard */,
@@ -117,6 +257,12 @@
 				36D4086718F9B1D600DD05C2 /* ViewController.m */,
 				36D4086918F9B1D600DD05C2 /* Images.xcassets */,
 				36D4085818F9B1D600DD05C2 /* Supporting Files */,
+				36AC36A918FA923E0038337C /* AlertViewController.h */,
+				36AC36AA18FA923E0038337C /* AlertViewController.m */,
+				36AC36AE18FA931A0038337C /* MenuLeftViewController.h */,
+				36AC36AF18FA931A0038337C /* MenuLeftViewController.m */,
+				36AC36B018FA931A0038337C /* MenuLeftViewController.xib */,
+				36AC36AB18FA923E0038337C /* AlertViewController.xib */,
 			);
 			path = disaster;
 			sourceTree = "<group>";
@@ -208,9 +354,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AC369618FA918E0038337C /* degre-f.png in Resources */,
+				36AC36A018FA918E0038337C /* partlycloudy.png in Resources */,
+				36AC369B18FA918E0038337C /* fond-today-3.jpg in Resources */,
+				36AC369318FA918E0038337C /* clear.png in Resources */,
+				36AC369718FA918E0038337C /* flurries.png in Resources */,
+				36AC36A218FA918E0038337C /* rain.png in Resources */,
+				36AC36A818FA918E0038337C /* unknown.png in Resources */,
+				36AC369A18FA918E0038337C /* fond-today-2.jpg in Resources */,
+				36AC36A318FA918E0038337C /* sleet.png in Resources */,
 				36D4086A18F9B1D600DD05C2 /* Images.xcassets in Resources */,
+				36AC36B218FA931A0038337C /* MenuLeftViewController.xib in Resources */,
+				36AC369018FA918E0038337C /* chancesleet.png in Resources */,
+				36AC369418FA918E0038337C /* cloudy.png in Resources */,
+				36AC369818FA918E0038337C /* fog.png in Resources */,
+				36AC369518FA918E0038337C /* degre-c.png in Resources */,
+				36AC36A118FA918E0038337C /* partlysunny.png in Resources */,
+				36AC369F18FA918E0038337C /* mostlysunny.png in Resources */,
+				36AC369218FA918E0038337C /* chancetstorms.png in Resources */,
 				36D4085C18F9B1D600DD05C2 /* InfoPlist.strings in Resources */,
+				36AC369D18FA918E0038337C /* hazy.png in Resources */,
 				36D4086518F9B1D600DD05C2 /* Main.storyboard in Resources */,
+				36AC36A518FA918E0038337C /* sunny.png in Resources */,
+				36AC36A618FA918E0038337C /* sync-128.png in Resources */,
+				36AC369118FA918E0038337C /* chancesnow.png in Resources */,
+				36AC369C18FA918E0038337C /* fond-today.jpg in Resources */,
+				36AC36A718FA918E0038337C /* tstorms.png in Resources */,
+				36AC368F18FA918E0038337C /* chancerain.png in Resources */,
+				36AC36AD18FA923E0038337C /* AlertViewController.xib in Resources */,
+				36AC36A418FA918E0038337C /* snow.png in Resources */,
+				36AC368E18FA918E0038337C /* chanceflurries.png in Resources */,
+				36AC369918FA918E0038337C /* fond-today-1.jpg in Resources */,
+				36AC369E18FA918E0038337C /* mostlycloudy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +403,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AC366D18FA91790038337C /* FFCircularProgressView.m in Sources */,
+				36AC367018FA91790038337C /* IIViewDeckController.m in Sources */,
+				36AC36AC18FA923E0038337C /* AlertViewController.m in Sources */,
 				36D4086818F9B1D600DD05C2 /* ViewController.m in Sources */,
+				36AC36B118FA931A0038337C /* MenuLeftViewController.m in Sources */,
+				36AC366F18FA91790038337C /* IISideController.m in Sources */,
 				36D4086218F9B1D600DD05C2 /* AppDelegate.m in Sources */,
+				36AC367118FA91790038337C /* IIWrapController.m in Sources */,
 				36D4085E18F9B1D600DD05C2 /* main.m in Sources */,
+				36AC366E18FA91790038337C /* UIColor+iOS7.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
